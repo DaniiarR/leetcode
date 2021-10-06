@@ -17,15 +17,3 @@ fun main(args: Array<String>) {
     println("Sorted array")
     printArray(array)
 }
-
-fun twoSum(nums: IntArray, target: Int): IntArray {
-    for ((index, firstUnusedNumber) in nums.withIndex()) {
-        var innerIndex = firstUnusedNumber + 1
-        for (i in firstUnusedNumber + 1 until nums.size) {
-            val sum = firstUnusedNumber + i
-            if (sum == target) {
-                return intArrayOf(index, )
-            }
-        }
-    }
-}
