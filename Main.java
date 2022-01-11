@@ -1,9 +1,12 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-        ValidParentheses vp = new ValidParentheses();
-        System.out.println(vp.isValid("(]"));
+        RunningSum rs = new RunningSum();
+        int[] arr = {1, 2, 3, 4};
+        System.out.println(Arrays.toString(rs.runningSum(arr)));
     }
 }
