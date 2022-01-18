@@ -21,7 +21,8 @@ public class Main {
 //            System.out.print(res.val);
 //            res = res.next;
 //        }
-        ValidPalindrome vp = new ValidPalindrome();
-        vp.isPalindrome(" ");
+        FindMaxConsecutive fmc = new FindMaxConsecutive();
+        int[] arr = {1,1,0,1,1,1};
+        System.out.println(fmc.findMaxConsecutiveOnes(arr));
     }
 }
