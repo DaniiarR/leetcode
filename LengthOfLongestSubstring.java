@@ -1,22 +1,31 @@
 package com.company;
 
-//public class LengthOfLongestSubstring {
-//    public int lengthOfLongestSubstring(String s) {
-//        if (s.length() == 1) return 1;
-//        int index = 1;
-//        int longestLength = 1;
-//        while (index < s.length() - 1) {
-////            String
-//            for (int i = index; i < s.length() - 1; i++) {
-//                if (s.charAt(i) != lastChar) {
-//                    longestLength++;
-//                    lastChar = s.charAt(i);
-//                } else {
-//                    index = i + 1;
-//                    break;
-//                }
-//            }
-//        }
-//        return longestLength;
-//    }
-//}
+import java.util.HashMap;
+
+public class LengthOfLongestSubstring {
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null) {
+            throw new IllegalArgumentException("Input string is null");
+        }
+
+        int len = s.length();
+        if (len <= 1) {
+            return len;
+        }
+
+        HashMap<Character, Integer> map = new HashMap<>();
+        int start = 0;
+        int maxLen = 0;
+
+        for (int end = 0; end < len; end++) {
+            char eChar = s.charAt(end);
+            if (map.containsKey(eChar)) {
+                start = Math.max(start, map.get(eChar) + 1);
+            }
+            map.put(eChar, end);
+            maxLen = Math.max(maxLen, end - start + 1);
+        }
+
+        return maxLen;
+    }
+}
