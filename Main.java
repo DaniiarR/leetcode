@@ -22,7 +22,9 @@ public class Main {
 //            System.out.print(res.val);
 //            res = res.next;
 //        }
-        CanJump canJump = new CanJump();
-        System.out.println(canJump.canJump(new int[]{2, 3, 1, 1, 4}));
+//        CanJump canJump = new CanJump();
+//        System.out.println(canJump.canJump(new int[]{2, 3, 1, 1, 4}));
+
+
     }
 }
