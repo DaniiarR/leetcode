@@ -71,6 +71,16 @@ public class SimpleHashtable {
         return hashtable[index] != null;
     }
 
+    public Employee remove(String key) {
+        int hashedKey = findKey(key);
+        if (hashedKey == -1) {
+            return null;
+        }
+        Employee employee = hashtable[hashedKey].employee;
+        hashtable[hashedKey] = null;
+        return employee;
+    }
+
     public void printHashtable() {
         for (StoredEmployee employee : hashtable) {
             if (employee == null) {
