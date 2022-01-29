@@ -1,7 +1,9 @@
 package com.company;
 
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class Main {
 
@@ -23,7 +25,18 @@ public class Main {
 //            System.out.print(res.val);
 //            res = res.next;
 //        }
-        NumUniqueEmails nue = new NumUniqueEmails();
-        System.out.println(nue.numUniqueEmails(new String[]{"test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"}));
+        Tree tree = new Tree();
+        tree.insert(25);
+        tree.insert(20);
+        tree.insert(15);
+        tree.insert(27);
+        tree.insert(30);
+        tree.insert(29);
+        tree.insert(26);
+        tree.insert(22);
+        tree.insert(32);
+        tree.traverseInOrder();
+
     }
+
 }

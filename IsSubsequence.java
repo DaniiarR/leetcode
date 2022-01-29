@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.HashMap;
+
 public class IsSubsequence {
     public boolean isSubsequence(String s, String t) {
         if (s.isEmpty()) {

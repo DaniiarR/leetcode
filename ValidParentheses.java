@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.HashMap;
 import java.util.Stack;
 
 public class ValidParentheses {

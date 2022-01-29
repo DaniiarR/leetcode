@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.*;
 
-public class Intersect {
+public class Intersect2 {
     public int[] intersect(int[] nums1, int[] nums2) {
         Map<Integer, Integer> map = new HashMap();
         for (int i : nums1) {
