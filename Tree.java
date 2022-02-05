@@ -2,11 +2,11 @@ package com.company;
 
 public class Tree {
 
-    private TreeNode root;
+    private TreeNodeNode root;
 
     public void insert(int value) {
         if (root == null) {
-            root = new TreeNode(value);
+            root = new TreeNodeNode(value);
         } else {
             root.insert(value);
         }
@@ -18,7 +18,7 @@ public class Tree {
         }
     }
 
-    public TreeNode get(int value) {
+    public TreeNodeNode get(int value) {
         if (root != null) {
             return root.get(value);
         }
@@ -45,7 +45,7 @@ public class Tree {
         root = delete(root, value);
     }
 
-    private TreeNode delete(TreeNode subtreeRoot, int value) {
+    private TreeNodeNode delete(TreeNodeNode subtreeRoot, int value) {
         if (subtreeRoot == null) {
             return null;
         }
